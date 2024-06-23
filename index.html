@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         .header {
             background-color: #007BFF;
@@ -21,6 +20,9 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
+            background: rgba(255, 255, 255, 0.8); /* Add background color to container for readability */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-pic {
             display: block;
@@ -45,15 +47,22 @@
         .contact-info li {
             margin: 5px 0;
         }
+
+        /* Background image */
+        .background-image {
+            background-image: url('images/background.jpg'); /* Adjust path if necessary */
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body>
+<body class="background-image">
     <div class="header">
         <h1>Wicklife Ochieng</h1>
         <p>Data Science Professional</p>
     </div>
     <div class="container">
-        <img src="FB_IMG_1717180429940.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="images/FB_IMG_1717180429940.jpg" alt="Wicklife Ochieng - Profile Picture" class="profile-pic">
         
         <div class="section">
             <h2>About Me</h2>
